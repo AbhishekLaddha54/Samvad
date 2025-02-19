@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "English to Hindi Translator",
+  "version": "1.0",
+  "description": "Highlight English text and get instant Hindi translation.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+   
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
